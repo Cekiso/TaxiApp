@@ -8,10 +8,10 @@ services:
   - postgresql
 
 env:
-  - DATABASE_URL=postgresql://postgres@localhost:5432/taxi_trips_tests;
+  - DATABASE_URL=postgresql://postgres@localhost:5432/taxi-trip-test;
 
 before_script:
-  - psql -c 'create database taxi_trips_tests;' -U postgres
-  - psql -U postgres -d taxi_trips_tests -a -f tables.sql
+  - psql -c 'create database taxi-trip-test;' -U postgres
+  - psql -U postgres -d taxi-trip-test -a -f tables.sql
 
 
