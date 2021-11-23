@@ -43,7 +43,8 @@ describe('Taxi Trips', function() {
         const taxiTrips = TaxiTrips(pool);
 
         assert.deepEqual([{
-                registration: 'ZN 123 166'
+                registration: "ZN 127 100"
+
             },
             {
                 registration: 'ZN 1166'
