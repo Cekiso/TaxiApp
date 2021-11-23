@@ -43,12 +43,15 @@ describe('Taxi Trips', function() {
         const taxiTrips = TaxiTrips(pool);
 
         assert.deepEqual([{
-            "registration": "ZN 123 166"
-        }, {
-            "registration": "ZN 1166"
-        }, {
-            "registration": "ZN 123-11"
-        }], await taxiTrips.findTaxisForRegion('Durban'));
+                registration: 'ZN 123 166'
+            },
+            {
+                registration: 'ZN 1166'
+            },
+            {
+                registration: 'ZN 123-11'
+            }
+        ], await taxiTrips.findTaxisForRegion('Durban'));
         assert.deepStrictEqual([{
             "registration": "CA 123-123"
         }, {
