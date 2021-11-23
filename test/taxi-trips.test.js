@@ -42,7 +42,7 @@ describe('Taxi Trips', function() {
     it('should find all the taxis for a region', async function() {
         const taxiTrips = TaxiTrips(pool);
 
-        assert.deepStrictEqual([{
+        assert.deepEqual([{
             "registration": "ZN 123 166"
         }, {
             "registration": "ZN 1166"
